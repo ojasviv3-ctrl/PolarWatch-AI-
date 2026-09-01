@@ -20,12 +20,17 @@
      + Counting  Screening  Analysis
           └─────────┬─────────┘
                     ↓
-               Data Fusion
+                Data Fusion
                     ↓
                  FastAPI
                     ↓
                PostgreSQL DB
-
+                    ↓
+             Analytics + Alerts
+                    ↓
+            Researcher Dashboard
+               
+             
 # TECH STACK
  1. Input Layer → Cameras, sensors, GPS & timestamps
  2. AI Layer → YOLO + CNN + RNN
@@ -59,7 +64,3 @@ Uses established AI/ML technologies Modular and scalable architecture ---> Can s
 
 
              
-                    ↓
-          Analytics + Alerts
-                    ↓
-        Researcher Dashboard
