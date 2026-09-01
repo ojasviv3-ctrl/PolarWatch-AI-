@@ -5,31 +5,36 @@
  An AI-driven multi-modal monitoring platform that automatically detects species, estimates populations, screens for visible health anomalies, analyses behaviour,  integrates environmental data, and stores observations in a centralized database.
 
 # FLOW OF SOLUTION
-  Wildlife Cameras + Environmental Sensors
-                   ↓
-            Data Acquisition
-                   ↓
-      Image / Video Preprocessing
-                   ↓
-        Roboflow Dataset Pipeline
-                   ↓
-          ┌──── AI MODELS ────┐
-          ↓         ↓         ↓
-        YOLO       CNN       RNN
-     Detection   Health    Behaviour
-     + Counting  Screening  Analysis
-          └─────────┬─────────┘
-                    ↓
-                Data Fusion
-                    ↓
-                 FastAPI
-                    ↓
-               PostgreSQL DB
-                    ↓
-             Analytics + Alerts
-                    ↓
-            Researcher Dashboard
-               
+ 1. DATA ACQUISITION
+→ Wildlife Cameras + IoT/Environmental Sensors
+
+ 2. DATA PREPROCESSING
+→ Python + Roboflow
+
+ 3. COMPUTER VISION
+→ YOLO → Object Detection & Species Counting
+
+ 4. HEALTH ANALYTICS
+→ CNN → Image Classification & Anomaly Detection
+
+ 5. BEHAVIOURAL ANALYTICS
+→ RNN → Temporal Sequence Analysis
+
+ 6. DATA FUSION
+→ AI Outputs + Sensor Data + Metadata
+
+ 7. BACKEND PROCESSING
+→ FastAPI + REST APIs
+
+ 8. DATABASE MANAGEMENT
+→ PostgreSQL
+
+ 9. ANALYTICS & ALERT ENGINE
+→ Risk Scoring + Anomaly Detection
+
+ 10. VISUALIZATION
+→ Research Dashboard & Real-Time Insights
+   
              
 # TECH STACK
  1. Input Layer → Cameras, sensors, GPS & timestamps
